@@ -10,13 +10,13 @@ import requests
 import os
 from pymongo import MongoClient
 
-MONGO_URL = "mongo db url" # https://www.mongodb.com/ 
+MONGO_URL = "mongodb+srv://logesh:logesh@cluster0.z75dh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority" # https://www.mongodb.com/ 
 
-API_ID = "1267i" # telegram api I'd my.telegram.org
-API_HASH = "jsksko12i0" # telegram api hash my.telegram.org
-TOKEN = "bot token" # telegram bot token 
-hosturl = "site url"
-CHAT_ID = -1001787468565 # telegram channel id
+API_ID = "27764668" # telegram api I'd my.telegram.org
+API_HASH = "2d544dd7bb51500fbd8eb557b78d200a" # telegram api hash my.telegram.org
+TOKEN = "5735293052:AAEY-ilho-VG3Z86csYnC1in_kDsR9aRkHc" # telegram bot token 
+hosturl = "kuki-api-two.vercel.app"
+CHAT_ID = -1001151980503 # telegram channel id
 
 async def clientbot():
     bot = Client(
@@ -43,7 +43,7 @@ async def chatbot(api, botname, owner, msg):
         bot = await clientbot()
         await bot.send_message(CHAT_ID, f"Invalid Token\n - {url}")
         ret = {
-            "reply": "Invalid Token Please Ask @metavoidsupport"        
+            "reply": "Invalid Token Please Ask @Awesome_RJ"        
         }    
         return ret
     if is_token:        
